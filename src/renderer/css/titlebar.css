@@ -1,0 +1,56 @@
+/* ===== TITLE BAR ===== */
+.titlebar {
+    height: 32px;
+    background: #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-app-region: drag;
+    user-select: none;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.titlebar-drag {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+}
+
+.titlebar-logo-img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    object-fit: contain;
+}
+
+.titlebar-title {
+    font-size: 12px;
+    color: #999;
+    font-weight: 500;
+}
+
+.titlebar-controls {
+    display: flex;
+    -webkit-app-region: no-drag;
+}
+
+.titlebar-button {
+    width: 46px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    color: #999;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.titlebar-button:hover {
+    background: #2a2a2a;
+}
+
+.titlebar-button.close:hover {
+    background: #e81123;
+    color: white;
+}

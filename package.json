@@ -1,0 +1,70 @@
+{
+  "name": "soul-launcher-v2",
+  "version": "2.0.0",
+  "description": "Soul Launcher - Minecraft Launcher with Admin Panel",
+  "main": "src/main/index.js",
+  "scripts": {
+    "vite": "vite",
+    "build": "vite build",
+    "build:full": "vite build && xcopy /E /I /Y assets dist\\assets",
+    "electron": "electron .",
+    "electron:dev": "wait-on http://localhost:3000 && electron . --dev",
+    "dev": "concurrently \"npm run vite\" \"npm run electron:dev\"",
+    "start": "npm run dev",
+    "dist": "npm run build:full && electron-builder"
+  },
+  "build": {
+    "appId": "com.mrsoul.launcher",
+    "productName": "Soul Launcher",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "src/**/*",
+      "dist/**/*",
+      "assets/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/App-icon.png",
+      "sign": null
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "artifactName": "SoulLauncher-Setup-${version}.exe"
+    }
+  },
+  "keywords": [
+    "minecraft",
+    "launcher"
+  ],
+  "author": "MrSoul",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.89.0",
+    "adm-zip": "^0.5.16",
+    "axios": "^1.13.2",
+    "dotenv": "^17.2.3",
+    "electron-squirrel-startup": "^1.0.1",
+    "minecraft-launcher-core": "^3.18.1",
+    "msmc": "3.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "concurrently": "^9.2.1",
+    "electron": "^33.0.0",
+    "electron-builder": "^24.13.3",
+    "electron-packager": "^17.1.2",
+    "electron-winstaller": "^5.4.0",
+    "png-to-ico": "^3.0.1",
+    "vite": "^7.3.0",
+    "wait-on": "^9.0.3"
+  }
+}

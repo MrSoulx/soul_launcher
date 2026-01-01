@@ -1,0 +1,234 @@
+/* ===== MODALS ===== */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: #2a2a2a;
+    border-radius: 16px;
+    padding: 32px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    background: #333;
+    border: none;
+    border-radius: 6px;
+    color: #999;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s;
+    z-index: 10;
+}
+
+.modal-close:hover {
+    background: #444;
+    color: #fff;
+}
+
+.modal-content h2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: center;
+    justify-content: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #999;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    background: #333;
+    border: 2px solid #444;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #ff5757;
+}
+
+.error-message {
+    padding: 12px;
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid #ef4444;
+    border-radius: 8px;
+    color: #ef4444;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+/* ===== MODPACK DETAIL MODAL ===== */
+.modpack-modal .modal-content {
+    max-width: 900px;
+    width: 95%;
+    padding: 0;
+    background: #1e1e1e;
+}
+
+.modpack-modal-header {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 16px 16px 0 0;
+}
+
+.modpack-modal-header-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.modpack-modal-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+.version-badge {
+    padding: 6px 16px;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff5757 100%);
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.modpack-modal-body {
+    display: flex;
+    min-height: 400px;
+}
+
+.modpack-modal-sidebar {
+    width: 250px;
+    padding: 24px;
+    background: #252525;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 0 0 0 16px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.info-item label {
+    font-size: 12px;
+    color: #999;
+    font-weight: 600;
+}
+
+.info-item span {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.modpack-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.action-btn {
+    flex: 1;
+    padding: 12px;
+    background: #333;
+    border: none;
+    border-radius: 8px;
+    color: #999;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    transition: all 0.2s;
+}
+
+.action-btn:hover {
+    background: #3a3a3a;
+    color: #fff;
+}
+
+.modpack-modal-content-area {
+    flex: 1;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modpack-modal-content-area .tabs {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+}
+
+.modpack-modal-content-area .tab {
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    color: #999;
+}
+
+.modpack-modal-content-area .tab.active {
+    background: transparent;
+    border-bottom-color: #ff5757;
+    color: #fff;
+}
+
+.modpack-description {
+    color: #ccc;
+    line-height: 1.6;
+    font-size: 14px;
+}
