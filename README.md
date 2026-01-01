@@ -1,4 +1,4 @@
-# soul-launcher-v2 🎮
+# soul-launcher 🎮
 Launcher created for fun to use with my friends.
 
 ## 🚀 Main Features
