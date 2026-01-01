@@ -1,4 +1,4 @@
-// Copyright (c) 2026 MrSoulx (Walter Gomez N.). All rights reserved.
+// Copyright (c) 2026 MrSoulx, Walter Gomez N. All rights reserved.
 import React, { useState, useEffect, useRef } from 'react';
 
 function ConsolePage({ logs = [], onClear, isAdmin = false, onRunDiagnostic, isGenerating = false }) {

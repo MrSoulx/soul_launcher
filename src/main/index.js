@@ -1,4 +1,4 @@
-// Copyright (c) 2026 MrSoulx (Walter Gomez N.). All rights reserved.
+// Copyright (c) 2026 MrSoulx, Walter Gomez N. All rights reserved.
 if (require('electron-squirrel-startup')) return;
 
 const { app, BrowserWindow, ipcMain, shell } = require('electron');

@@ -1,4 +1,4 @@
-// Copyright (c) 2026 MrSoulx (Walter Gomez N.). All rights reserved.
+// Copyright (c) 2026 MrSoulx, Walter Gomez N. All rights reserved.
 import React from 'react';
 
 function Sidebar({ currentPage, onPageChange, user, isAdminLoggedIn, onProfileClick }) {

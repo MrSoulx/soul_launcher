@@ -1,5 +1,5 @@
 const fs = require('fs');
-// Copyright (c) 2026 MrSoulx (Walter Gomez N.). All rights reserved.
+// Copyright (c) 2026 MrSoulx, Walter Gomez N. All rights reserved.
 const { app, shell } = require('electron');
 
 /**

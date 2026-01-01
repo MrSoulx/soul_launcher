@@ -36,5 +36,5 @@ node build-installer.js
 ```
 
 ---
-Developed by **MrSoulx (Walter Gomez N.)**.
+Developed by **MrSoulx, Walter Gomez N.**.
 Built with ❤️ for the community.
