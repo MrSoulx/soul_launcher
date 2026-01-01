@@ -1,5 +1,6 @@
 const fs = require('fs');
-const path = require('path');
+// Copyright (c) 2026 MrSoulx (Walter Gomez N.). All rights reserved.
+const { app, shell } = require('electron');
 
 /**
  * Authentication Module - Working code from Electron-Launcher

@@ -1,3 +1,4 @@
+// Copyright (c) 2026 MrSoulx (Walter Gomez N.). All rights reserved.
 import React, { useState } from 'react';
 
 function AdminLoginModal({ onClose, onLogin }) {

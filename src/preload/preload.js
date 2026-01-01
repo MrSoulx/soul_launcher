@@ -1,3 +1,4 @@
+// Copyright (c) 2026 MrSoulx (Walter Gomez N.). All rights reserved.
 const { contextBridge, ipcRenderer } = require('electron');
 
 // Expose protected methods that allow the renderer process to use

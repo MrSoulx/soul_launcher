@@ -1,3 +1,4 @@
+// Copyright (c) 2026 MrSoulx (Walter Gomez N.). All rights reserved.
 const { Client, Authenticator } = require('minecraft-launcher-core');
 const path = require('path');
 const fs = require('fs');

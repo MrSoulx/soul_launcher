@@ -8,7 +8,7 @@ function Footer({ status, progress }) {
                 <span className="footer-status">
                     {status} {progress > 0 && `(${progress}%)`}
                 </span>
-                <span className="footer-credit">BYMRSOULX</span>
+                <span className="footer-credit">Developed by MrSoulx</span>
             </div>
         </div>
     );
